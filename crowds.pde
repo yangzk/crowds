@@ -9,15 +9,15 @@ Circle c = new Circle(new PVector(0, 0), 20);
 void setup() {
   size(640, 640);
   background(255);
-  frameRate(5); 
+  //frameRate(); 
  
 
-for(int i=0;i<100;i++){  
+for(int i=0;i<1000;i++){  
   PVector newLoc = new PVector(random(width), random(height));
   float newD = (int) random(min, max);
   
   /* Detect whether if we use these these values if it will intersect the other objects. */
-  while (detectAnyCollision (circles, newLoc, newD)) {
+  while (detectAnyCollision(circles, newLoc, newD)) {
     /* If the values do interect make new values. */
     newLoc = new PVector(random(width), random(height));
     newD = (float) random(min, max);

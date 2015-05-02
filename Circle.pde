@@ -10,7 +10,7 @@ class Circle {
   void draw() {
     /* Random color to add some spice */
     stroke(0);
-    strokeWeight(2);
+    strokeWeight(1);
     noFill();
     ellipse(loc.x, loc.y, d, d);
   }
